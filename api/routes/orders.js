@@ -34,12 +34,4 @@ router.delete('/:orderId',(req,res,next)=>{
     })
 })
 
-router.patch('/:orderId',(req,res,next)=>{
-    res.status(200).json({
-        message: 'Order deleted',
-        orderId: req.params.orderId
-    })
-})
-
-
 module.exports = router
